@@ -1,0 +1,7 @@
+.footer{
+    padding: 90px 0;
+    &__wrapper{
+        @include font(14px, #707070, Arimo, 400);
+        text-align: center;
+    }
+}

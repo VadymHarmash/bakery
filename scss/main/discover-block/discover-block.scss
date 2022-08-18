@@ -1,0 +1,27 @@
+.discover-block{
+    padding: 100px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__video{
+        iframe{
+            width: 470px;
+            height: 510px;
+        }
+    }
+    &__content{
+        width: 45%;
+        h2{
+            @include font(44px, #454545, Lobster, 400);
+        }
+        p{
+            @include font(18px, #565656, Poppins, 400);
+            margin: 40px 0;
+        }
+        a{
+            @extend %button;
+        }
+    }
+}

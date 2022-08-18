@@ -1,0 +1,75 @@
+.food-block{
+    padding: 100px 0;
+    text-align: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title{
+        h2{
+            @include font(44px, #454545, Lobster, 400);
+        }
+        p{
+            @include font(18px, #565656, Poppins, 400);
+            margin: 20px auto 40px;
+            width: 45%;
+        }
+    }
+    &__blocks{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            flex-wrap: wrap;
+            div{
+                border-radius: 10px 10px 0 0;
+            }
+        }
+        .first-row{
+            div{
+                background-color: #f13c9e;
+                width: calc(50% - 30px);
+                height: 380px;
+            }
+        }
+        .second-row{
+            div{
+                background-color: #f13c9e;
+                width: calc(33% - 30px);
+                height: 360px;
+                &:nth-child(2){
+                    background-color: #df67b8;
+                    position: relative;
+                    p{
+                        position: absolute;
+                        left: 35px;
+                        display: none;
+                    }
+                    .price{
+                        @include font(28px, #ffffff, Poppins, 600);
+                        top: 260px;
+                    }
+                    .name{
+                        @include font(20px, #ffffff, Poppins, 400);
+                        top: 300px;
+                    }
+                }
+                &:hover{
+                    p{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+        margin: 60px 0 0 0;
+        a{
+            @extend %button;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.order-block{
+    padding: 100px 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form{
+        width: 40%;
+        h2{
+            @include font(44px, #454545, Lobster, 400);
+        }
+        p{
+            @include font(18px, #565656, Poppins, 400);
+            margin: 40px 0;
+        }
+        .inputs{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+            input{
+                width: calc(50% - 20px);
+                padding: 10px;
+                &:last-child{
+                    width: 100%;
+                    margin: 20px 0 60px;
+                }
+            }
+        }
+        a{
+            @extend %button;
+        }
+    }
+    &__photo{
+        width: 670px;
+        height: 530px;
+        background-color: #f02995;
+    }
+}

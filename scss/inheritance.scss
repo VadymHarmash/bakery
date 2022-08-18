@@ -1,0 +1,11 @@
+%button{
+    @include font(16px, #ffffff, Poppins, 400);
+    background-color: #f13c9e;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1px #f13c9e solid;
+    &:hover{
+        color: #f13c9e;
+        background-color: #ffffff;
+    }
+}
