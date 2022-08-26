@@ -21,10 +21,10 @@
                         padding: 100% 0;
                     }
                     a{
-                        @include font(18px, #454545, Arimo, 400);
+                        @include font(18pt, #454545, Arimo, 400);
                         &:hover{
                             text-decoration: underline;
-                            color: #f13c9e;
+                            color: #f02995;
                         }
                     }
                 }

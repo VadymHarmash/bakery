@@ -4,8 +4,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 90%;
+        margin: 0 auto;
         a{
-            @include font(35px, #767676, Philosopher, 700);
+            @include font(35pt, #464646, Philosopher, 700);
         }
         nav{
             width: 50%;
@@ -13,10 +15,11 @@
                 list-style: none;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 margin: 0;
                 padding: 0;
                 a{
-                    @include font(18px, #575757, Arimo, 400);
+                    @include font(18pt, #464646, Arimo, 400);
                     &:hover{
                         color: #f46cb6;
                     }

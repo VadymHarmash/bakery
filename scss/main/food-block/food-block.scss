@@ -8,12 +8,12 @@
     }
     &__title{
         h2{
-            @include font(44px, #454545, Lobster, 400);
+            @include font(44pt, #363636, Lobster, 400);
         }
         p{
-            @include font(18px, #565656, Poppins, 400);
+            @include font(18pt, #939393, Poppins, 400);
             margin: 20px auto 40px;
-            width: 45%;
+            width: 57%;
         }
     }
     &__blocks{
@@ -50,11 +50,11 @@
                         display: none;
                     }
                     .price{
-                        @include font(28px, #ffffff, Poppins, 600);
-                        top: 260px;
+                        @include font(28pt, #ffffff, Poppins, 600);
+                        top: 250px;
                     }
                     .name{
-                        @include font(20px, #ffffff, Poppins, 400);
+                        @include font(20pt, #ffffff, Poppins, 400);
                         top: 300px;
                     }
                 }

@@ -5,12 +5,12 @@
         justify-content: space-between;
     }
     &__form{
-        width: 40%;
+        width: 45%;
         h2{
-            @include font(44px, #454545, Lobster, 400);
+            @include font(44pt, #303030, Lobster, 400);
         }
         p{
-            @include font(18px, #565656, Poppins, 400);
+            @include font(18pt, #939393, Poppins, 400);
             margin: 40px 0;
         }
         .inputs{
@@ -19,11 +19,13 @@
             flex-wrap: wrap;
             width: 80%;
             input{
+                @include font(14pt, #636363, Poppins, 400);
                 width: calc(50% - 20px);
                 padding: 10px;
                 &:last-child{
                     width: 100%;
                     margin: 20px 0 60px;
+                    padding-left: 15px;
                 }
             }
         }

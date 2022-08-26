@@ -11,26 +11,27 @@
         }
     }
     &__contact-list{
-        width: 18%;
+        width: 23%;
         ul{
-            @include font(16px, #707070, Poppins, 400);
             padding: 0;
             margin: 0;
             li{
                 margin: 20px 0;
                 &:first-child{
-                    color: #000000;
-                    font-size: 35px;
+                    @include font(35pt, #464646, Philosopher, 700);
                 }
                 &:nth-child(2){
+                    @include font(16pt, #707070, Poppins, 400);
                     padding: 0 0 0 20px;
                     background: url("../icons/call.png") 0 no-repeat;
                 }
                 &:nth-child(3){
+                    @include font(16pt, #707070, Poppins, 400);
                     padding: 0 0 0 20px;
                     background: url("../icons/mail.png") 0 no-repeat;
                 }
                 &:nth-child(4){
+                    @include font(16pt, #707070, Poppins, 400);
                     padding: 0 0 0 20px;
                     background: url("../icons/location.png") 0 no-repeat;
                 }
@@ -52,13 +53,13 @@
             li{
                 margin-top: 25px;
                 a{
-                    @include font(18px, #707070, Poppins, 400);
+                    @include font(18pt, #707070, Poppins, 400);
                     &:hover{
                         color: #f02995;
                     }
                 }
                 &:first-child a{
-                    @include font(20px, #707070, Poppins, 600);
+                    @include font(20pt, #484848, Poppins, 600);
                     &:hover{
                         color: #f02995;
                         margin: 0;

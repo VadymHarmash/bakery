@@ -6,18 +6,23 @@
         align-items: center;
     }
     &__video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         iframe{
             width: 470px;
             height: 510px;
         }
     }
     &__content{
-        width: 45%;
+        display: flex;
+        flex-direction: column;
+        width: 55%;
         h2{
-            @include font(44px, #454545, Lobster, 400);
+            @include font(44pt, #363636, Lobster, 400);
         }
         p{
-            @include font(18px, #565656, Poppins, 400);
+            @include font(18pt, #939393, Poppins, 400);
             margin: 40px 0;
         }
         a{
